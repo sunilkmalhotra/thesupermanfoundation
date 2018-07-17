@@ -1,0 +1,32 @@
+h1.xxl {
+   line-height: .8;
+    color:red;
+    font-weight: bold;
+    font-family: inherit;
+    font-style: normal;
+    font-display: auto;
+    text-align: center;
+}
+
+.bg
+{
+    /* The image used */
+    background-image: url("../../../assets/1453148715_Human_Heart_Anatomy.jpg");
+
+    /* Full height */
+    /*height: 100%;*/
+
+
+    /* Center and scale the image nicely */
+
+    position:absolute;
+
+    top:200px;
+    left:0;
+    right:0;
+    bottom:0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}

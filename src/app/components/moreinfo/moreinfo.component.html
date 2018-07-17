@@ -1,0 +1,11 @@
+<h1>Learn More</h1>
+<br>
+<div class="container-fluid">
+  <div class="row" *ngFor="let externallink of extLinkList">
+    <div class="col-lg-12">
+      <span class="extlink">
+        <a href="{{externallink.url}}" target="_blank">{{externallink.description}}</a>
+      </span>
+    </div>
+  </div>
+</div>

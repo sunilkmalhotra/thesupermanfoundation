@@ -1,0 +1,29 @@
+
+<div class="container-fluid around w-75 p-3" style="background-color:rgb(248, 248, 255);">
+  <div class="container-fluid">
+    <h1 align="center" class="redcolor"><font  face="Monotype Corsiva">The Superman Fo</font><font  face="Monotype Corsiva">undation</font></h1>
+    <!--i class="fab fa-gratipay" style="font-size:100px;"></i-->
+  </div>
+  <div class="container-fluid">
+    <nav class="navbar navbar-light" style="background-color:rgb(248, 248, 255);">
+      <ul class="nav nav-pills nav-fill" *ngFor="let navbarItem of navbarItemList">
+        <li class="nav-item" *ngIf="!navbarItem.dropdown">
+          <a class="nav-link" href="javascript:;" routerLink="{{navbarItem.path}}" routerLinkActive="active">
+            <span class="mb-2 h5 navfont">{{navbarItem.name}}</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown" routerLinkActive="active">
+           <a class="nav-link dropdown-toggle" *ngIf="navbarItem.dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             {{navbarItem.name}}
+           </a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <a class="dropdown-item" href="#" *ngFor="let dropitem of navbarItem.dropdown" routerLink="{{dropitem.path}}">{{dropitem.name}}</a>
+           </div>
+         </li>
+      </ul>
+    </nav>
+    <div class="margincss">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
