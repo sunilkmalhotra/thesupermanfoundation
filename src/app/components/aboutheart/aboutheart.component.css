@@ -1,11 +1,11 @@
 .imgcss {
-  margin-right:40px;
-  margin-bottom:100px;
+  margin-right:4vmin;
+  margin-bottom:10vmin;
 }
 
 .list
 {
   position: absolute;
-  left: 150px;
-  margin-top: 527px;
+  left: 15vmin;
+  margin-top: 53vmin;
 }

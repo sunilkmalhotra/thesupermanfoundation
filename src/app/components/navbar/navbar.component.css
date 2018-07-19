@@ -2,7 +2,7 @@
 div.around
  {
    position: absolute;
-   top:20px;
+   top:3vmin;
    left: 0;
    right:0;
   }
@@ -14,24 +14,26 @@ div.around
   color:red;
   font-weight: bold;
   flex-flow: row;
-  font-size: 90px;
+  font-size: 12vmin;
+  margin-top:0;
+  margin-bottom:0;
 }
 
 span
 {
   font-family:sans-serif;
-  font-size:20px;
+  font-size:3vmin;
 }
 
 a
 {
   font-family:sans-serif;
-  font-size:25px;
+  font-size:2.5vmin;
 }
 
 .navfont
 {
 
   font-family: 'Encode Sans Condensed', sans-serif;
-  font-size:25px;
+  font-size:2.5vmin;
 }

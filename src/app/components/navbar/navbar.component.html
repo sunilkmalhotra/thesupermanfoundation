@@ -5,8 +5,13 @@
     <!--i class="fab fa-gratipay" style="font-size:100px;"></i-->
   </div>
   <div class="container-fluid">
-    <nav class="navbar navbar-light" style="background-color:rgb(248, 248, 255);">
-      <ul class="nav nav-pills nav-fill" *ngFor="let navbarItem of navbarItemList">
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color:rgb(248, 248, 255);">
+      <!--a class="navbar-brand" href="#">navbar</a-->
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav nav-pills mr-auto" *ngFor="let navbarItem of navbarItemList">
         <li class="nav-item" *ngIf="!navbarItem.dropdown">
           <a class="nav-link" href="javascript:;" routerLink="{{navbarItem.path}}" routerLinkActive="active">
             <span class="mb-2 h5 navfont">{{navbarItem.name}}</span>
@@ -21,6 +26,7 @@
            </div>
          </li>
       </ul>
+    </div>
     </nav>
     <div class="margincss">
       <router-outlet></router-outlet>
